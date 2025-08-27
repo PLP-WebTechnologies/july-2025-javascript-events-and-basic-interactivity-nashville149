@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Interactive Web Page</h1>
+        <button id="theme-toggle">Toggle Light/Dark Mode</button>
+    </header>
+
+    <main>
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3 class="faq-question">What is this page about?</h3>
+                <div class="faq-answer">
+                    <p>This page is a demonstration of various interactive elements created with JavaScript.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">How does the theme toggle work?</h3>
+                <div class="faq-answer">
+                    <p>The theme toggle button uses JavaScript to add or remove a "dark-mode" class to the body of the page, which then changes the color scheme via CSS.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">How does the FAQ section work?</h3>
+                <div class="faq-answer">
+                    <p>The FAQ section uses JavaScript to listen for clicks on the questions. When a question is clicked, it toggles the visibility of the answer.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="form-validation">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                    <div class="error-message"></div>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
